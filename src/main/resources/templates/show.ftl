@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache">
 <#assign sc="/static"/>
-    <title>易圣通灌水大乐园</title>
+    <title>情绪分享乐园2.0</title>
 
     <!-- Bootstrap framework -->
     <link rel="stylesheet" href="${sc}/bootstrap/css/bootstrap.min.css" />
@@ -113,8 +113,8 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
-                    <a class="brand" href="http://www.papaok.org"><i
-                            class="icon-home icon-white"></i> 易圣通灌水大乐园 <span class="sml_t">2.0</span></a>
+                    <a class="brand" href="https://blog.csdn.net/soul_soul_soul"><i
+                            class="icon-home icon-white"></i> 情绪分享乐园 <span class="sml_t">2.0</span></a>
 
 
 
