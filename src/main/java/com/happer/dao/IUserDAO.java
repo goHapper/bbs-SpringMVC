@@ -19,8 +19,8 @@ public interface IUserDAO extends CrudRepository<Bbsuser,Integer> {//主键是in
 
 
     @Modifying
-    @Query("update Bbsuser set pagenum=:p where userid=:u")
-    int updatePageNumById(@Param("u")Integer userid,@Param("p")Integer pagenum);
-    //int updatePageNumById(@Param("user")Bbsuser user);
+    @Query("update Bbsuser set pagenum=:#{#user.pagenum} where userid=:#{#user.userid}")
+    int updatePageNumById(@Param("user")Bbsuser user);
+    // int updatePageNumById(@Param("u")Integer userid,@Param("p")Integer pagenum);
 }
 

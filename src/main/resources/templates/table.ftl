@@ -30,9 +30,9 @@
 						<ul class="dropdown-menu">
 
 
-							<li><a href="user?action=ur&pagenum=5">默认5行</a></li>
-							<li><a href="user?action=ur&pagenum=10">每页10行</a></li>
-							<li><a href="user?action=ur&pagenum=2">每页2行</a></li>
+							<li><a href="/user/ur/5">默认5行</a></li>
+							<li><a href="/user/ur/10">每页10行</a></li>
+							<li><a href="/user/ur/2">每页2行</a></li>
 						</ul>
 
 					</div>
@@ -69,7 +69,7 @@
 										
 										title="" class="cbox_single thumbnail">
 
-											<img src="user?action=pic&id=${d.user.userid}"
+											<img src="/user/pic/${d.user.userid}"
 											alt="" style="height: 50px; width: 50px" />
 
 									</a>
@@ -115,7 +115,7 @@
 											<#if user??>
 												<#if user.userid==d.user.userid>
 												<a
-													href="article?action=delz&id=${d.id}"
+													href="/article/delz/${d.id}"
 													title="删除本帖"><i class="icon-trash"></i></a>
 												</#if>
 											</#if>

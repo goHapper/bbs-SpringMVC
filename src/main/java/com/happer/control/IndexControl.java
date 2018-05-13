@@ -1,5 +1,8 @@
 package com.happer.control;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -13,24 +16,25 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@WebServlet(name="IndexControl",urlPatterns = {"/index"},
-initParams = {@WebInitParam(name="success",value="article?action=queryall&page=1")})//传参数
-
+//@WebServlet(name="IndexControl",urlPatterns = {"/index"},
+//initParams = {@WebInitParam(name="success",value="article?action=queryall&page=1")})//传参数
+@Controller
+@RequestMapping(value="/index")
 public class IndexControl extends HttpServlet{
     private Map<String,String> map = new HashMap();
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        map.put("success",config.getInitParameter("success"));
-    }
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        RequestDispatcher dispatcher = null;
-        dispatcher=req.getRequestDispatcher(map.get("success"));
-        dispatcher.forward(req,resp);
-    }
+//    @Override
+//    public void init(ServletConfig config) throws ServletException {
+//        map.put("success",config.getInitParameter("success"));
+//    }
+//    @Override
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        this.doPost(req,resp);
+//    }
+//
+//    @Override
+//    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+//        RequestDispatcher dispatcher = null;
+//        dispatcher=req.getRequestDispatcher(map.get("success"));
+//        dispatcher.forward(req,resp);
+//    }
 }

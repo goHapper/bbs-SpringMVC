@@ -4,81 +4,82 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache">
-    <title>情绪分享乐园</title>
+<#assign sc="/static"/>
+    <title>易圣通灌水大乐园</title>
 
     <!-- Bootstrap framework -->
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="${sc}/bootstrap/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="${sc}/bootstrap/css/bootstrap-responsive.min.css" />
     <!-- jQuery UI theme -->
-    <link rel="stylesheet" href="/lib/jquery-ui/css/Aristo/Aristo.css" />
+    <link rel="stylesheet" href="${sc}/lib/jquery-ui/css/Aristo/Aristo.css" />
     <!-- theme color-->
-    <link rel="stylesheet" href="/css/blue.css" id="link_theme" />
+    <link rel="stylesheet" href="${sc}/css/blue.css" id="link_theme" />
     <!-- tooltips-->
-    <link rel="stylesheet" href="/lib/jBreadcrumbs/css/BreadCrumb.css" />
+    <link rel="stylesheet" href="${sc}/lib/jBreadcrumbs/css/BreadCrumb.css" />
     <!-- tooltips-->
-    <link rel="stylesheet" href="/lib/qtip2/jquery.qtip.min.css" />
+    <link rel="stylesheet" href="${sc}/lib/qtip2/jquery.qtip.min.css" />
     <!-- colorbox -->
-    <link rel="stylesheet" href="/lib/colorbox/colorbox.css" />
+    <link rel="stylesheet" href="${sc}/lib/colorbox/colorbox.css" />
     <!-- code prettify -->
-    <link rel="stylesheet" href="/lib/google-code-prettify/prettify.css" />
+    <link rel="stylesheet" href="${sc}/lib/google-code-prettify/prettify.css" />
     <!-- notifications -->
-    <link rel="stylesheet" href="/lib/sticky/sticky.css" />
+    <link rel="stylesheet" href="${sc}/lib/sticky/sticky.css" />
     <!-- aditional icons -->
-    <link rel="stylesheet" href="/img/splashy/splashy.css" />
+    <link rel="stylesheet" href="${sc}/img/splashy/splashy.css" />
     <!-- flags -->
-    <link rel="stylesheet" href="/img/flags/flags.css" />
+    <link rel="stylesheet" href="${sc}/img/flags/flags.css" />
     <!-- calendar -->
-    <link rel="stylesheet" href="/lib/fullcalendar/fullcalendar_gebo.css" />
+    <link rel="stylesheet" href="${sc}/lib/fullcalendar/fullcalendar_gebo.css" />
     <!-- datepicker -->
-    <link rel="stylesheet" href="/lib/datepicker/datepicker.css" />
+    <link rel="stylesheet" href="${sc}/lib/datepicker/datepicker.css" />
     <!-- tag handler -->
-    <link rel="stylesheet" href="/lib/tag_handler/css/jquery.taghandler.css" />
+    <link rel="stylesheet" href="${sc}/lib/tag_handler/css/jquery.taghandler.css" />
     <!-- uniform -->
-    <link rel="stylesheet" href="/lib/uniform/Aristo/uniform.aristo.css" />
+    <link rel="stylesheet" href="${sc}/lib/uniform/Aristo/uniform.aristo.css" />
     <!-- multiselect -->
-    <link rel="stylesheet" href="/lib/multi-select/css/multi-select.css" />
+    <link rel="stylesheet" href="${sc}/lib/multi-select/css/multi-select.css" />
     <!-- enhanced select -->
-    <link rel="stylesheet" href="/lib/chosen/chosen.css" />
+    <link rel="stylesheet" href="${sc}/lib/chosen/chosen.css" />
     <!-- wizard -->
-    <link rel="stylesheet" href="/lib/stepy/css/jquery.stepy.css" />
+    <link rel="stylesheet" href="${sc}/lib/stepy/css/jquery.stepy.css" />
     <!-- upload -->
     <link rel="stylesheet"
-          href="/lib/plupload/js/jquery.plupload.queue/css/plupload-gebo.css" />
+          href="${sc}/lib/plupload/js/jquery.plupload.queue/css/plupload-gebo.css" />
     <!-- CLEditor -->
-    <link rel="stylesheet" href="/lib/CLEditor/jquery.cleditor.css" />
+    <link rel="stylesheet" href="${sc}/lib/CLEditor/jquery.cleditor.css" />
     <!-- colorpicker -->
-    <link rel="stylesheet" href="/lib/colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" href="${sc}/lib/colorpicker/css/colorpicker.css" />
     <!-- smoke_js -->
-    <link rel="stylesheet" href="/lib/smoke/themes/gebo.css" />
+    <link rel="stylesheet" href="${sc}/lib/smoke/themes/gebo.css" />
 
 
 
     <!-- main styles -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="${sc}/css/style.css" />
 
 
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="favicon.ico" />
 
-    <link href="/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
+    <link href="${sc}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"
           type="text/css" />
 
 
     <!-- CKeditor -->
 
 
-    <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
 
 
     <!--[if lte IE 8]>
-	<link rel="stylesheet" href="/css/ie.css"  />
+    <link rel="stylesheet" href="${sc}/css/ie.css"  />
     <![endif]-->
 
     <!--[if lt IE 9]>
-	<script src="/js/ie/html5.js" ></script>
-	<script src="/js/ie/respond.min.js" ></script>
-	<script src="/lib/flot/excanvas.min.js" ></script>
+    <script src="${sc}/js/ie/html5.js" ></script>
+    <script src="${sc}/js/ie/respond.min.js" ></script>
+    <script src="${sc}/lib/flot/excanvas.min.js" ></script>
+
     <![endif]-->
     <script>
         //* hide all elements & show preloader
@@ -87,17 +88,21 @@
 
     <!--kindeditor-->
 
-    <link rel="stylesheet" href="/editor/themes/default/default.css" />
-    <script charset="utf-8" src="/editor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="/editor/lang/zh_CN.js"></script>
+    <link rel="stylesheet" href="${sc}/editor/themes/default/default.css" />
+    <script charset="utf-8" src="${sc}/editor/kindeditor-min.js"></script>
+    <script charset="utf-8" src="${sc}/editor/lang/zh_CN.js"></script>
     <script type="text/javascript">
         var editor;
         KindEditor.ready(function(K) {
             editor = K.create('textarea[name="content"]', {
                 allowFileManager : true
             });
+
         });
     </script>
+
+
+
 </head>
 
 <body class="sidebar_hidden">
@@ -108,15 +113,16 @@
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
-                    <a class="brand" href="https://blog.csdn.net/soul_soul_soul"><i
-                            class="icon-home icon-white"></i> 情 绪 分 享 乐 园 <span class="sml_t">2.0</span></a>
+                    <a class="brand" href="http://www.papaok.org"><i
+                            class="icon-home icon-white"></i> 易圣通灌水大乐园 <span class="sml_t">2.0</span></a>
 
 
 
                     <ul class="nav user_menu pull-right">
                         <li class="hidden-phone hidden-tablet">
                             <div class="nb_boxes clearfix">
-                                <a data-toggle="modal" data-backdrop="static" href="#login"
+                                <a data-toggle="modal" data-backdrop="static"
+                                   href="#login"
                                    class="label ttip_b" title="登录"
                                    onclick="javascript:document.getElementById('submenu').innerHTML='登录'">
                                     <i class="splashy-calendar_week"></i>
@@ -130,12 +136,11 @@
                         <li class="divider-vertical hidden-phone hidden-tablet"></li>
                         <li class="dropdown"><a href="#" class="dropdown-toggle"
                                                 data-toggle="dropdown">
-
                         <#if user??>
-                            <img src="user?action=pic&id=${user.userid}" alt="请登录" class="user_avatar" />
+                            <img src="/user/pic/${user.userid}" alt="请登录" class="user_avatar" />
                         ${user.username}
                         <#else>
-                            <img src="" alt="请登录" class="user_avatar" />
+                            <img src="${sc}/img/user_avatar.png" alt="请登录" class="user_avatar" />
                             游客
                         </#if>
 
@@ -149,22 +154,15 @@
                                 <li><a data-toggle="modal" id="my" data-backdrop="static"
                                        href="#register" title="注册"
                                        onclick="javascript:document.getElementById('submenu').innerHTML='注册'">注册</a>
-
-
                                 </li>
-
-
-                                <#if user??>
+                            <#if user??>
                                 <li><a href="#post" title="灌水" data-toggle="modal"
                                        id="myp" data-backdrop="static"
                                        onclick="javascript:addz();document.getElementById('submenu').innerHTML='灌水'">灌水</a>
-
-                                </#if>
-
                                 </li>
-
+                            </#if>
                                 <li class="divider"></li>
-                                <li><a href="user?action=logout"
+                                <li><a href="/user/logout"
                                        onclick="javascript:document.getElementById('submenu').innerHTML=''">退出当前用户</a></li>
                             </ul></li>
                     </ul>
@@ -172,21 +170,7 @@
                 </div>
             </div>
         </div>
-
-
-
         <!-- 灌水发帖 ,和回复贴,回复贴展示-->
-
-
-
-
-
-
-
-
-
-
-
 
         <!-- 登录 -->
 
@@ -194,9 +178,9 @@
         <!-- 注册 -->
 
 
-	<#include "login.ftl">
+    <#include "login.ftl">
 
-	<#include "register.ftl">
+    <#include "register.ftl">
 
     </header>
     <!-- 显示帖子列表,浏览主贴时显示，浏览回帖时不显示 -->
@@ -210,62 +194,67 @@
 
 
 
-<script src="js/jquery.min.js" charset="utf-8"></script>
-<script src="lib/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
-<!-- touch events for jquery ui-->
-<script src="js/forms/jquery.ui.touch-punch.min.js"></script>
-<!-- easing plugin -->
-<script src="js/jquery.easing.1.3.min.js"></script>
-<!-- smart resize event -->
-<script src="js/jquery.debouncedresize.min.js"></script>
+<script src="${sc}/js/jquery.min.js" charset="utf-8"></script>
 <!-- js cookie plugin -->
-<script src="js/jquery.cookie.min.js"></script>
+<script src="${sc}/js/jquery.cookie.js"></script>
+<script src="${sc}/lib/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+<!-- touch events for jquery ui-->
+<script src="${sc}/js/forms/jquery.ui.touch-punch.min.js"></script>
+<!-- easing plugin -->
+<script src="${sc}/js/jquery.easing.1.3.min.js"></script>
+<!-- smart resize event -->
+<script src="${sc}/js/jquery.debouncedresize.min.js"></script>
+
 <!-- main bootstrap js -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="${sc}/bootstrap/js/bootstrap.min.js"></script>
 <!-- bootstrap plugins -->
-<script src="js/bootstrap.plugins.min.js"></script>
+<script src="${sc}/js/bootstrap.plugins.min.js"></script>
 <!-- code prettifier -->
-<script src="lib/google-code-prettify/prettify.min.js"></script>
+<script src="${sc}/lib/google-code-prettify/prettify.min.js"></script>
 <!-- sticky messages -->
-<script src="lib/sticky/sticky.min.js"></script>
+<script src="${sc}/lib/sticky/sticky.min.js"></script>
 <!-- tooltips -->
-<script src="lib/qtip2/jquery.qtip.min.js"></script>
+<script src="${sc}/lib/qtip2/jquery.qtip.min.js"></script>
 <!-- lightbox -->
-<script src="lib/colorbox/jquery.colorbox.min.js"></script>
+<script src="${sc}/lib/colorbox/jquery.colorbox.min.js"></script>
 <!-- jBreadcrumbs -->
-<script src="lib/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
+<script src="${sc}/lib/jBreadcrumbs/js/jquery.jBreadCrumb.1.1.min.js"></script>
 <!-- hidden elements width/height -->
-<script src="js/jquery.actual.min.js"></script>
+<script src="${sc}/js/jquery.actual.min.js"></script>
 <!-- scroll -->
-<script src="lib/antiscroll/antiscroll.js"></script>
-<script src="lib/antiscroll/jquery-mousewheel.js"></script>
+<script src="${sc}/lib/antiscroll/antiscroll.js"></script>
+<script src="${sc}/lib/antiscroll/jquery-mousewheel.js"></script>
 <!-- fix for ios orientation change -->
-<script src="js/ios-orientationchange-fix.js"></script>
+<script src="${sc}/js/ios-orientationchange-fix.js"></script>
 <!-- to top -->
-<script src="lib/UItoTop/jquery.ui.totop.min.js"></script>
+<script src="${sc}/lib/UItoTop/jquery.ui.totop.min.js"></script>
 <!-- mobile nav -->
-<script src="js/selectNav.js"></script>
+<script src="${sc}/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="js/gebo_common.js"></script>
+<script src="${sc}/js/gebo_common.js"></script>
 
 
 <!-- datatable -->
-<script src="lib/datatables/jquery.dataTables.min.js"></script>
+<script src="${sc}/lib/datatables/jquery.dataTables.min.js"></script>
 <!-- additional sorting for datatables -->
-<script src="lib/datatables/jquery.dataTables.sorting.js"></script>
-<script src="js/gebo_notifications.js" charset="GBK"></script>
+<script src="${sc}/lib/datatables/jquery.dataTables.sorting.js"></script>
+<script src="${sc}/js/gebo_notifications.js" charset="GBK"></script>
 <!-- masked inputs -->
-<script src="js/forms/jquery.inputmask.min.js"></script>
+<script src="${sc}/js/forms/jquery.inputmask.min.js"></script>
 
-<script src="lib/complexify/jquery.complexify.min.js"></script>
+<script src="${sc}/lib/complexify/jquery.complexify.min.js"></script>
 <!-- form functions -->
-<script src="js/myforms.js"></script>
-<script src="/js/jquery.bootstrap-growl.js"></script>
+<script src="${sc}/js/myforms.js"></script>
+<!--Kafaka-->
+
+<script src="${sc}/js/jquery.bootstrap-growl.js"></script>
 
 
 <!-- tables functions -->
 <script>
+
+
     /* [ ---- Gebo Admin Panel - tables ---- ] */
 
     $(document).ready(function() {
@@ -338,17 +327,44 @@
 
                     });
 </script>
+
 <script type="text/javascript">
+    function get_cookie(Name) {
+        var search = Name + "="//查询检索的值
+        var returnvalue = "";//返回值
+        if (document.cookie.length > 0) {
+            sd = document.cookie.indexOf(search);
+            if (sd!= -1) {
+                sd += search.length;
+                end = document.cookie.indexOf(";", sd);
+                if (end == -1)
+                    end = document.cookie.length;
+                //unescape() 函数可对通过 escape() 编码的字符串进行解码。
+                returnvalue=unescape(document.cookie.substring(sd, end))
+            }
+        }
+        return returnvalue;
+    }
+
     $(function() {
-        var username = $.cookie('papaoku'); // 获得cookie
-        var password = $.cookie('papaokp');
+        var username = $.cookie('wpau'); // 获得cookie
+        var password = $.cookie('wpap');
+        // alert(username);
 
         $('#username').val(username);//设置文本框
         $('#password').val(password);
+
+        //alert(get_cookie("wpau"));
+
+
         //选中
         $("input[name='sun']").attr("checked", "checked");
+
         window.setInterval("timerMessage()",2000);
+
     });
+
+
     function timerMessage(){
     var uid=<#if user??>${user.userid}<#else>0</#if>
         if(uid==0){//游客
@@ -356,9 +372,8 @@
         }
         $.ajax({
             type:"post",
-            url:"user",
+            url:"/user/message/"+uid+"/",
             dataType:"text json",
-            data:"action=message&uid="+uid,
             statusCode:{
                 200:function(data){
 
@@ -382,44 +397,48 @@
     }
     function login() {
         if ($("#username").val() == '') {
-
             document.getElementById("sticky_a1").click();
             return;
         }
         if ($("#password").val() == '') {
-
             document.getElementById("sticky_a2").click();
             return;
         }
         $.ajax({
-           data:$("#login_form").serialize(),
-           url:"user",
-           dataType:"text",
-           type:"post",
-           statusCode:{
-               200:function (data) {
-                  if(data.indexOf("true")!=-1){
-                        window.location="index";
-                  }else{
-                      alert("登录失败")
-                  }
-               }
-           }
+
+            url:"/user/login?username="+$("#username").val()+"&password="+$("#password").val(),
+            dataType:"text",
+            type:"post",
+            statusCode:{
+                200:function(data){
+                    if(data.indexOf("true")!=-1){//代表已经登录成功
+
+                        if ($('#sun').attr('checked')) {
+
+                            $.cookie("wpau", $("#username").val() , { path: '/', expires: 3600 * 24 * 7 });
+                            $.cookie("wpap", $("#password").val() , { path: '/', expires: 3600 * 24 * 7 });
+                        }
+
+                        window.location="/";
+                    }else{
+                        alert('登录失败！');
+                    }
+                }
+            }
+
         });
 
         //document.all.login_form.submit();
 
     }
     //删除从贴
-    function del(id,rootid,zid) {
+    function del(id,rootid,zid) {//zid:z主帖用户id
 
         $.ajax({
             type: "post",
-            url: "article",
-            data:"action=delc&rid="+id+"&id="+rootid,
+            url: "/article/delc?rid="+id+"&id="+rootid,
             dataType: "text json",
             success : function(data){
-
 
                 //刷新从贴
                 showhuitie($("#postrootid").val(),$('#userid').val(),zid,data);
@@ -429,10 +448,9 @@
     }
     //灌贴和回帖保存内容
     function add() {
+
         //得到回帖内容数据
-        //var txt=CKEDITOR.instances.content.getData();
-
-
+        // var txt=CKEDITOR.instances.content.getData();
         var txt=editor.html();
         if ($('#title').val() =='') {
 
@@ -445,16 +463,13 @@
             document.getElementById("sticky_a7").click();
             return;
         }
-
-
         //获取textarea的值  ,赋值到hidden
-        //$('#neirong').val(txt);
-        $("#content").val(txt);
+        // $('#neirong').val(txt);
+        $('#content').val(txt);
 
         // document.all.addarticle.neirong.value=txt;
 
         if( $('#userid').val()==""){//没有登录
-
             document.getElementById("sticky_a8").click();
             return;
         }
@@ -462,8 +477,8 @@
         if($("#postrootaction").val()==='reply'){//回帖使用异步，否则不能定位到model
             $.ajax({
                 type: "post",
-                url: "article",
-                data:"action=reply&title="+$('#title').val()+"&content="+txt+"&rootid="+$("#postrootid").val()+"&userid="+$('#userid').val()+"&id="+$('#postrootid').val(),
+                url: "/article/addc?title="+$('#title').val()+"&content="+txt+"&rootid="+$("#postrootid").val()+"&uid="+$('#userid').val()+"&id="+$('#postrootid').val(),
+
                 dataType: "text json",
                 success : function(data){
                     //能回帖的肯定是同一用户，所以uid和duid相等
@@ -480,7 +495,6 @@
         //发主贴
 
         if($("#postrootaction").val()==='addz'){//主帖
-
             $('#addarticle').submit();
 
         }
@@ -488,15 +502,15 @@
 
 
     }
-    //content为内容组件的名字
-//    CKEDITOR.replace('content',{
-//        filebrowserBrowseUrl : 'ckfinder/ckfinder.html',
-//        filebrowserImageBrowseUrl : 'ckfinder/ckfinder.html?type=Images',
-//        filebrowserFlashBrowseUrl : 'ckfinder/ckfinder.html?type=Flash',
-//        filebrowserUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Files',
-//        filebrowserImageUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Images',
-//        filebrowserFlashUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Flash'
-//    });
+    //    //content为内容组件的名字
+    //    CKEDITOR.replace('content',{
+    //        filebrowserBrowseUrl : 'ckfinder/ckfinder.html',
+    //        filebrowserImageBrowseUrl : 'ckfinder/ckfinder.html?type=Images',
+    //        filebrowserFlashBrowseUrl : 'ckfinder/ckfinder.html?type=Flash',
+    //        filebrowserUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Files',
+    //        filebrowserImageUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Images',
+    //        filebrowserFlashUploadUrl : 'ckfinder/core/connector/java/connector.java?command=QuickUpload&type=Flash'
+    //    });
 
     //执行发主贴窗体
     function addz() {
@@ -515,8 +529,7 @@
         $('#rshow').modal('hide');
         //清空title和content两个控件
         $('#title').val("");
-       editor.html("");
-        //CKEDITOR.instances.content.setData(' ');//清空内容框内容
+        editor.html("")//清空内容框内容
         $('#post').modal('show');
 
     }
@@ -524,7 +537,7 @@
     /*
         //id主贴
         //uid:浏览用户id
-        //duid:发本帖的用户id
+        //duid:发主帖的用户id
         //显示回帖,用AJAX技术
         data:从异步返回来的json
     */
@@ -547,6 +560,7 @@
 
 
             //增加删除重贴按钮,浏览用户和本帖用户相同的情况下，才能删除
+            console.log("浏览用户id:"+uid+",----从贴id"+data.list[i].user.userid+"---");
 
             if(uid==data.list[i].user.userid){//字符串是否相等,删除从贴\
                 console.log(uid+"--"+data.list[i].user.userid);
@@ -573,6 +587,7 @@
                 }
 
             }
+
 
 
             //增加帖子的标题，在tab上
@@ -626,17 +641,17 @@
 
     //显示回帖的ajax
     function rshow(id,uid,duid) {
-        //id主贴 uid:浏览用户  duid:主贴id
+        //id主贴主键 uid:浏览用户id  duid:主贴用户id
         //显示回帖,用AJAX技术
         //把该帖子的id值付给rshow model下的隐藏字段
         $("#rshowid").val(id);
+
         //把该主帖子的id值付给post model下的隐藏字段，代表该贴是子贴
         $("#postrootid").val(id);
         $("#zid").val(duid);
         $.ajax({
             type: "post",
-            url: "article",
-            data:"action=queryid&id="+id,
+            url: "/article/queryid?id="+id,
             dataType: "text json",
             success : function(data){
                 //显示回帖内容，并且显示在model窗体中
@@ -644,8 +659,6 @@
 
             }
         });
-
-
     }
     function upload() {
         if (document.all.fileinput.value == '') {
@@ -783,6 +796,7 @@
 
     });
 </script>
+
 </body>
 </html>
 

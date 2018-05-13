@@ -1,6 +1,6 @@
 
 <form name="addarticle" id="addarticle"
-      action="article"
+      action="/article/addz"
       method="post">
     <table style="width: 500px; height: auto;">
         <tr>

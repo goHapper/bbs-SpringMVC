@@ -9,7 +9,7 @@
 				<div class="modal-body" data-backdrop="static">
 
 					<div class="cnt_b">
-						<form method="post" action="user" name="File_form"
+						<form method="post" action="/user/reg" name="File_form"
 							method="post" enctype="multipart/form-data" id="File_form">
 							<div class="formRow">
 								<div class="control-group formSep">
@@ -21,7 +21,7 @@
 												class="fileupload fileupload-new">
 												<div style="width: 60px; height: 60px;"
 													class="fileupload-new thumbnail">
-													<img src="upload/cuy.jpg" name="portrait" id="portrait"
+													<img src="${sc}/upload/cuy.jpg" name="portrait" id="portrait"
 														alt="请选择自己的头像" />
 
 												</div>
